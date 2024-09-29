@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de videojuego con Imagen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <form action="resultados de videojuego.html" method="get" enctype="multipart/form-data">
+        <label for="nombre">Nombre del videojuego:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="especie">Género:</label>
+        <select id="especie" name="especie">
+            <option value="disparos">Disparos</option>
+            <option value="carreras">Carreras</option>
+            <option value="aventura">Aventura</option>
+        </select>
+
+        <label for="imagen">Subir imagen:</label>
+        <input type="file" id="imagen" name="imagen">
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
